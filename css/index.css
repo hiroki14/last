@@ -9,10 +9,13 @@ header #header_in {
   padding-bottom: 4px; }
 @media (max-width: 550px) {
   header .logo {
-    width: 190px; }
+    text-align: center; }
+    header .logo h1 {
+      margin: 0; }
   header .navi {
-    width: 40px;
-    float: right; } }
+    display: flex; }
+    header .navi .sp_navi {
+      margin: auto; } }
 header .sp_navi_li {
   width: 180px;
   position: absolute;
@@ -114,7 +117,7 @@ header .sp_navi_li {
       text-decoration: none; }
 
 .owl-carousel .banner {
-  padding: 80px 0;
+  padding: 0;
   background-image: url("images/top/ca_banner.jpg");
   background-size: cover; }
   @media (min-width: 550px) {
@@ -157,8 +160,10 @@ header .sp_navi_li {
   flex-direction: row;
   flex-wrap: wrap; }
 
+#item_area .space {
+  margin-top: 50px; }
 #item_area .item_box {
-  height: 300px;
+  height: 260px;
   width: 155px;
   padding: 5px;
   margin: 1px;
@@ -173,6 +178,8 @@ header .sp_navi_li {
     font-size: 15px;
     font-size: 1.5rem; }
 @media (min-width: 550px) {
+  #item_area .space {
+    margin-top: 0; }
   #item_area .item_box {
     width: 214px;
     height: 300px;
@@ -586,7 +593,8 @@ footer {
   #product_area {
     background: #fff; }
     #product_area .boxtop {
-      position: relative; }
+      position: relative;
+      padding-bottom: 10px; }
       #product_area .boxtop h1 {
         font-size: 30px;
         font-size: 3rem;
@@ -601,6 +609,7 @@ footer {
         text-align: right; }
     #product_area #display img {
       width: 460px;
+      height: 490px;
       margin-left: 20px;
       margin-right: 20px; }
     #product_area #list {
